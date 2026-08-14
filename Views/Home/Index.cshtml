@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Início";
+}
+
+<div class="text-center">
+    <h1 class="display-5 mb-2">Sistema de Gestão de Loja</h1>
+    <p class="text-muted mb-5">Gerencie categorias, produtos, clientes e pedidos em um só lugar.</p>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+                <h5 class="card-title">Categorias</h5>
+                <p class="card-text text-muted">Organize os tipos de produtos da loja.</p>
+                <a asp-controller="Categoria" asp-action="Index" class="btn btn-outline-primary">Acessar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+                <h5 class="card-title">Produtos</h5>
+                <p class="card-text text-muted">Cadastre e controle o estoque de produtos.</p>
+                <a asp-controller="Produto" asp-action="Index" class="btn btn-outline-primary">Acessar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+                <h5 class="card-title">Clientes</h5>
+                <p class="card-text text-muted">Gerencie os dados dos seus clientes.</p>
+                <a asp-controller="Cliente" asp-action="Index" class="btn btn-outline-primary">Acessar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+                <h5 class="card-title">Pedidos</h5>
+                <p class="card-text text-muted">Acompanhe os pedidos realizados.</p>
+                <a asp-controller="Pedido" asp-action="Index" class="btn btn-outline-primary">Acessar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+                <h5 class="card-title">Itens de Pedido</h5>
+                <p class="card-text text-muted">Veja os produtos vinculados a cada pedido.</p>
+                <a asp-controller="ItemPedido" asp-action="Index" class="btn btn-outline-primary">Acessar</a>
+            </div>
+        </div>
+    </div>
+</div>
